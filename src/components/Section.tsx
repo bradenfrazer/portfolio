@@ -21,7 +21,7 @@ interface SectionProps extends VariantProps<typeof sectionClasses> {
 export const Section = (props: SectionProps) => {
   const { className, title, children, direction } = props;
   return (
-    <section className="container flex max-w-screen-xl flex-col gap-4 px-5 py-8 md:p-14">
+    <section className="prose prose-invert container flex max-w-screen-xl flex-col px-5 py-8 md:p-14">
       {title && <h2 id={title.toLowerCase()}>{title}</h2>}
       <div className={cx(sectionClasses({ direction }), className)}>
         {children}
