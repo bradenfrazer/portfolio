@@ -2,6 +2,7 @@ import { useState } from "react";
 import { cx } from "class-variance-authority";
 import logo from "../assets/logo-256.png";
 import logoFull from "../assets/logo.png";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 type NavItemProps = {
   href: string;
@@ -37,19 +38,8 @@ export const Nav = () => {
             setIsNavExpanded(!isNavExpanded);
           }}
         >
-          {/* icon from Heroicons.com */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="white"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
+          {isNavExpanded && <XMarkIcon className="w-6" />}
+          {!isNavExpanded && <Bars3BottomRightIcon className="w-6" />}
         </button>
         <ul
           className={cx(
