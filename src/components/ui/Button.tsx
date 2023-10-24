@@ -1,9 +1,9 @@
 import { cva, cx, type VariantProps } from "class-variance-authority";
 
-const buttonClasses = cva(["px-4 py-2 rounded-full border-0"], {
+const buttonClasses = cva(["px-4 py-2 rounded-full border-0 no-underline "], {
   variants: {
     variant: {
-      primary: "bg-blue-700",
+      primary: "bg-blue-500 text-blue-50",
     },
   },
   defaultVariants: {

@@ -25,7 +25,7 @@ export const About = () => {
         </p>
       </div>
       <div>
-        <img className="rounded-full" src={photo} />
+        <img className="mx-auto max-w-xs rounded-full" src={photo} />
       </div>
     </Section>
   );

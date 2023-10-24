@@ -9,8 +9,11 @@ export const Work = (props: WorkProps) => {
   return (
     <Section direction="vertical" title="Work">
       <div className="flex flex-col gap-4">
-        {projects.map((project) => (
-          <Project project={project} />
+        {projects.map((project, index) => (
+          <Project
+            project={project}
+            layout={index % 2 ? "image/content" : "content/image"}
+          />
         ))}
       </div>
     </Section>
