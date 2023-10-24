@@ -7,7 +7,7 @@ type HeroProps = {};
 export const Hero = (props: HeroProps) => {
   const {} = props;
   return (
-    <Section className="relative top-16 items-center justify-between">
+    <Section className="relative top-24 items-center justify-between">
       <div>
         <h1>Hi, I'm Braden.</h1>
         <p>I help design meet code.</p>

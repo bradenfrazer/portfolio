@@ -13,7 +13,10 @@ const NavItem = (props: NavItemProps) => {
   const { href, children } = props;
   return (
     <li className="m-0 text-center">
-      <a className="w-full text-black sm:text-white" href={href}>
+      <a
+        className="block w-full px-4 py-2 text-gray-950 transition hover:bg-blue-500 sm:text-white"
+        href={href}
+      >
         {children}
       </a>
     </li>
@@ -24,7 +27,7 @@ export const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <nav className="container absolute z-10 flex w-full max-w-screen-xl justify-between px-5 py-8 md:p-14">
+    <nav className="container absolute z-10 flex w-full max-w-screen-xl justify-between px-5 py-4 md:p-14">
       <a className="w-16 sm:w-28" href="/">
         <picture>
           <source media="(min-width: 768px)" srcSet={logoFull} />
@@ -43,7 +46,7 @@ export const Nav = () => {
         </button>
         <ul
           className={cx(
-            "absolute left-0 top-16 w-full flex-col gap-16 border-t border-black bg-white sm:relative sm:top-0 sm:flex sm:flex-row sm:border-0 sm:bg-transparent",
+            "absolute left-0 top-24 w-full flex-col divide-y divide-blue-500 bg-blue-400 text-gray-950 sm:relative sm:top-0 sm:flex sm:flex-row sm:gap-16 sm:divide-y-0 sm:bg-transparent",
             isNavExpanded ? "flex" : "hidden",
           )}
         >
