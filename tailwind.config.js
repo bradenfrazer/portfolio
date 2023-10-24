@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            "h1, h2": {
+              fontFamily: "'Caveat Brush', sans-serif",
+            },
+          },
+        },
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

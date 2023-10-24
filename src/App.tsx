@@ -1,3 +1,5 @@
+import "@fontsource/caveat-brush";
+
 import { About } from "./components/About";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
