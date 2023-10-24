@@ -3,9 +3,8 @@ import photo from "../assets/about.jpg";
 
 export const About = () => {
   return (
-    <Section>
+    <Section title="About">
       <div>
-        <h2 id="about">About</h2>
         <p>
           My name is Braden Frazer, and I'm a web developer currently residing
           in the Dallas, TX area. I have a passion for all kinds of tech, and a

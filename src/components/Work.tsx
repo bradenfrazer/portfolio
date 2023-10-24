@@ -7,8 +7,7 @@ type WorkProps = {};
 export const Work = (props: WorkProps) => {
   const {} = props;
   return (
-    <Section>
-      <h2 id="work">Work</h2>
+    <Section direction="vertical" title="Work">
       <div className="flex flex-col gap-4">
         {projects.map((project) => (
           <Project project={project} />
