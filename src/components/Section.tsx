@@ -27,7 +27,11 @@ export const Section = (props: SectionProps) => {
   return (
     <section className={cx(sectionClasses({ variant }), className)}>
       <Container className={cx("prose group-[.text-light]:prose-invert")}>
-        {title && <h2 id={title.toLowerCase()}>{title}</h2>}
+        {title && (
+          <h2 id={title.toLowerCase()} className="text-4xl md:text-5xl">
+            {title}
+          </h2>
+        )}
         <div
           className={cx(
             "flex w-full flex-col items-center justify-between gap-x-16 md:flex-row [&>*]:flex-1",
