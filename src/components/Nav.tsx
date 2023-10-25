@@ -3,6 +3,7 @@ import { cx } from "class-variance-authority";
 import logo from "../assets/logo-128.png";
 import logoFull from "../assets/logo.png";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Container } from "./ui/Container";
 
 type NavItemProps = {
   href: string;
@@ -27,8 +28,8 @@ export const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <nav className="absolute z-10 w-full">
-      <div className="container mx-auto flex w-full max-w-screen-xl justify-between px-5 py-4 md:p-14 md:py-8">
+    <nav className="absolute z-10 w-full px-5 py-4 md:p-14 md:py-8">
+      <Container className="flex justify-between">
         <a className="w-12 md:w-16" href="/">
           <picture>
             <source media="(min-width: 768px)" srcSet={logoFull} />
@@ -58,7 +59,7 @@ export const Nav = () => {
             <NavItem href="/#contact">Contact</NavItem>
           </ul>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 };
