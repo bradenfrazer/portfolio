@@ -3,7 +3,13 @@ import photo from "../assets/about.jpg";
 
 export const About = () => {
   return (
-    <Section title="About">
+    <Section title="About" variant="light">
+      <div className="md:order-2">
+        <img
+          className="mx-auto w-48 max-w-xs rounded-full md:w-auto"
+          src={photo}
+        />
+      </div>
       <div>
         <p>
           My name is Braden Frazer, and I'm a web developer currently residing
@@ -23,9 +29,6 @@ export const About = () => {
           have any questions or interest in my work, don't hesitate to contact
           me through the form below!
         </p>
-      </div>
-      <div>
-        <img className="mx-auto max-w-xs rounded-full" src={photo} />
       </div>
     </Section>
   );
