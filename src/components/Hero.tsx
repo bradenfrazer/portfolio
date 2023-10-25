@@ -9,8 +9,10 @@ export const Hero = (props: HeroProps) => {
   return (
     <Section variant="hybrid" className="pb-0 pt-20 md:pb-0 md:pt-32">
       <div className="w-full pt-5 md:pt-0">
-        <h1 className="mb-4 sm:text-5xl md:text-6xl">Hi, I'm Braden.</h1>
-        <p>I help design meet code.</p>
+        <h1 className="mb-4 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          Hi, I'm Braden.
+        </h1>
+        <p className="lead">I help design meet code.</p>
         <Button href="#work">View My Work</Button>
       </div>
       <div className="flex w-full justify-end">
