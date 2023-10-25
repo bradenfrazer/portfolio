@@ -3,6 +3,7 @@ import "@fontsource/caveat-brush";
 import { About } from "./components/About";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
+import { Links } from "./components/Links";
 import { Nav } from "./components/Nav";
 import { Work } from "./components/Work";
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      <Links />
       <Work />
       <About />
       <Footer />
