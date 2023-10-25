@@ -30,7 +30,7 @@ export const Section = (props: SectionProps) => {
         {title && <h2 id={title.toLowerCase()}>{title}</h2>}
         <div
           className={cx(
-            "gap-x-16[&>*]:flex-1 flex w-full flex-col items-center justify-between md:flex-row",
+            "flex w-full flex-col items-center justify-between gap-x-16 md:flex-row [&>*]:flex-1",
           )}
         >
           {children}
