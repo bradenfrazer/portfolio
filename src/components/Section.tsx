@@ -1,6 +1,7 @@
 import { cva, cx, type VariantProps } from "class-variance-authority";
+import { Container } from "./ui/Container";
 
-const sectionClasses = cva(["group w-full"], {
+const sectionClasses = cva(["group w-full px-5 py-8 md:p-14"], {
   variants: {
     variant: {
       dark: "text-light",
@@ -16,23 +17,16 @@ const sectionClasses = cva(["group w-full"], {
 });
 
 interface SectionProps extends VariantProps<typeof sectionClasses> {
-  containerClassName?: string;
-  contentClassName?: string;
+  className?: string;
   title?: string;
   children: React.ReactNode;
 }
 
 export const Section = (props: SectionProps) => {
-  const { containerClassName, contentClassName, title, children, variant } =
-    props;
+  const { className, title, children, variant } = props;
   return (
-    <section className={cx(sectionClasses({ variant }), containerClassName)}>
-      <div
-        className={cx(
-          "container prose mx-auto flex max-w-screen-xl flex-col px-5 py-8 group-[.text-light]:prose-invert md:p-14",
-          contentClassName,
-        )}
-      >
+    <section className={cx(sectionClasses({ variant }), className)}>
+      <Container className={cx("prose group-[.text-light]:prose-invert")}>
         {title && <h2 id={title.toLowerCase()}>{title}</h2>}
         <div
           className={cx(
@@ -41,7 +35,7 @@ export const Section = (props: SectionProps) => {
         >
           {children}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

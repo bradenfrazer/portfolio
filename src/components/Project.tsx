@@ -1,4 +1,5 @@
 import { Button } from "./ui/Button";
+import { Container } from "./ui/Container";
 
 type ProjectProps = {
   project: ProjectData;
@@ -8,7 +9,7 @@ type ProjectProps = {
 export const Project = (props: ProjectProps) => {
   const { project, layout } = props;
   return (
-    <div className="flex flex-col items-center justify-between gap-x-16 md:flex-row [&>*]:flex-1">
+    <Container className="flex flex-col items-center justify-between gap-x-16 md:flex-row [&>*]:flex-1">
       <div className={layout === "content/image" ? "md:order-2" : ""}>
         <img src={project.imageUrl} />
       </div>
@@ -17,6 +18,6 @@ export const Project = (props: ProjectProps) => {
         <p>{project.description}</p>
         <Button href={project.url}>View</Button>
       </div>
-    </div>
+    </Container>
   );
 };
