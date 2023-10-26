@@ -1,12 +1,18 @@
+import { DocumentTextIcon } from "@heroicons/react/20/solid";
 import { Section } from "./Section";
 import { Button } from "./ui/Button";
 
 export const Links = () => {
   return (
-    <Section variant="white">
-      <ul className="not-prose mx-auto flex justify-center gap-12">
+    <Section variant="mid">
+      <ul className="not-prose mx-auto flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-12">
         <li>
-          <Button href="https://resume.bradenfrazer.com/">Resume</Button>
+          <Button href="https://resume.bradenfrazer.com/">
+            <span>
+              <DocumentTextIcon className="w-4" />
+            </span>
+            <span>Resume</span>
+          </Button>
         </li>
         <li>
           <Button href="https://www.linkedin.com/in/bradenfrazer">

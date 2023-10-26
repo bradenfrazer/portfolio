@@ -3,7 +3,7 @@ import photo from "../assets/about.jpg";
 
 export const About = () => {
   return (
-    <Section title="About" variant="light">
+    <Section title="About" variant="mid">
       <div className="md:order-2">
         <img
           className="mx-auto w-48 max-w-xs rounded-full md:w-auto"

@@ -1,14 +1,14 @@
 import { cva, cx, type VariantProps } from "class-variance-authority";
 import { Container } from "./ui/Container";
 
-const sectionClasses = cva(["group w-full px-5 py-8 md:p-14"], {
+const sectionClasses = cva(["group relative z-[1] w-full px-5 py-8 md:p-14"], {
   variants: {
     variant: {
       dark: "text-light",
-      light: "bg-blue-300",
+      light: "bg-primary-400",
       hybrid:
-        "text-light bg-[linear-gradient(110deg,var(--tw-gradient-stops))] from-transparent from-65% to-blue-300 to-65% sm:from-50% sm:to-50%",
-      white: "bg-white",
+        "text-light bg-[linear-gradient(110deg,var(--tw-gradient-stops))] from-transparent from-65% to-primary-400 to-65% sm:from-50% sm:to-50%",
+      mid: "text-light bg-primary-800",
     },
   },
   defaultVariants: {

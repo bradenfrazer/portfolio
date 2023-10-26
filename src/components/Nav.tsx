@@ -15,7 +15,7 @@ const NavItem = (props: NavItemProps) => {
   return (
     <li className="m-0 text-center">
       <a
-        className="block w-full px-4 py-2 text-blue-950 transition hover:bg-blue-500 md:rounded-full md:bg-blue-300 md:hover:bg-blue-50/25"
+        className="hover:bg-primary-800 md:bg-primary-400 md:hover:bg-primary-50/25 text-primary-50 md:text-primary-950 block w-full px-4 py-3 font-semibold transition md:rounded-full md:py-2"
         href={href}
       >
         {children}
@@ -38,19 +38,19 @@ export const Nav = () => {
         </a>
         <div className="flex items-center">
           <button
-            className="-mr-4 block rounded-full p-4 hover:bg-blue-50/25 md:hidden"
+            className="hover:bg-primary-50/25 -mr-4 block rounded-full p-4 md:hidden"
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            {isNavExpanded && <XMarkIcon className="w-6 text-blue-950" />}
+            {isNavExpanded && <XMarkIcon className="text-primary-950 w-6" />}
             {!isNavExpanded && (
-              <Bars3BottomRightIcon className="w-6 text-blue-950" />
+              <Bars3BottomRightIcon className="text-primary-950 w-6" />
             )}
           </button>
           <ul
             className={cx(
-              "absolute left-0 top-24 w-full flex-col divide-y divide-blue-500 bg-blue-400 text-blue-950 md:relative md:top-0 md:flex md:flex-row md:gap-12 md:divide-y-0 md:bg-transparent",
+              "bg-primary-950 md:text-primary-950 divide-primary-900 text-primary-50 absolute left-0 top-24 ml-5 w-[calc(100%-40px)] flex-col divide-y rounded-lg md:relative md:top-0 md:flex md:flex-row md:gap-12 md:divide-y-0 md:bg-transparent",
               isNavExpanded ? "flex" : "hidden",
             )}
           >

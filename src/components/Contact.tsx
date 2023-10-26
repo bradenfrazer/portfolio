@@ -2,7 +2,7 @@ import { Section } from "./Section";
 
 export const Contact = () => {
   return (
-    <Section title="Contact" variant="white">
+    <Section title="Contact" variant="light">
       <form name="contact-form" method="POST" data-netlify="true">
         <div data-for="name">
           <label htmlFor="name">Name</label>
