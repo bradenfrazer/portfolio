@@ -7,7 +7,7 @@ export const Links = () => {
     <Section variant="mid">
       <ul className="not-prose mx-auto flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-12">
         <li>
-          <Button href="https://resume.bradenfrazer.com/">
+          <Button href="https://resume.bradenfrazer.com/" variant="secondary">
             <span>
               <DocumentTextIcon className="w-4" />
             </span>
@@ -15,12 +15,17 @@ export const Links = () => {
           </Button>
         </li>
         <li>
-          <Button href="https://www.linkedin.com/in/bradenfrazer">
+          <Button
+            href="https://www.linkedin.com/in/bradenfrazer"
+            variant="secondary"
+          >
             LinkedIn
           </Button>
         </li>
         <li>
-          <Button href="https://github.com/bradenfrazer/">Github</Button>
+          <Button href="https://github.com/bradenfrazer/" variant="secondary">
+            GitHub
+          </Button>
         </li>
       </ul>
     </Section>
