@@ -1,6 +1,8 @@
 import { DocumentTextIcon } from "@heroicons/react/20/solid";
 import { Section } from "./Section";
 import { Button } from "./ui/Button";
+import GitHubLogo from "./../assets/github.svg?react";
+import LinkedInLogo from "./../assets/linkedin.svg?react";
 
 export const Links = () => {
   return (
@@ -19,12 +21,18 @@ export const Links = () => {
             href="https://www.linkedin.com/in/bradenfrazer"
             variant="secondary"
           >
-            LinkedIn
+            <span>
+              <LinkedInLogo className="w-4" />
+            </span>
+            <span>LinkedIn</span>
           </Button>
         </li>
         <li>
           <Button href="https://github.com/bradenfrazer/" variant="secondary">
-            GitHub
+            <span>
+              <GitHubLogo className="w-4" />
+            </span>
+            <span>GitHub</span>
           </Button>
         </li>
       </ul>

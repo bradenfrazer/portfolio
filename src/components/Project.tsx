@@ -1,6 +1,7 @@
 import { Badge } from "./ui/Badge";
 import { Button } from "./ui/Button";
 import { Container } from "./ui/Container";
+import GithubLogo from "./../assets/github.svg?react";
 
 type ProjectProps = {
   project: ProjectData;
@@ -28,7 +29,9 @@ export const Project = (props: ProjectProps) => {
           <Button href={project.url}>View</Button>{" "}
           {project.githubUrl && (
             <Button href={project.githubUrl} variant="secondary">
-              <span></span>
+              <span>
+                <GithubLogo className="w-4" />
+              </span>
               <span>GitHub</span>
             </Button>
           )}
