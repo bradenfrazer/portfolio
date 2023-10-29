@@ -6,7 +6,7 @@ export const About = () => {
     <Section title="About" variant="mid">
       <div className="md:order-2">
         <img
-          className="mx-auto w-48 max-w-xs rounded-full md:w-auto"
+          className="border-primary-950 mx-auto w-48 max-w-xs rounded-full border-4 shadow md:w-auto"
           src={photo}
         />
       </div>

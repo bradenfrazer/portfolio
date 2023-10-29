@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    boxShadow: ({ theme }) => ({
+      DEFAULT: "0.25rem 0.25rem " + theme("colors.primary.950"),
+      sm: "0.25rem 0.25rem " + theme("colors.primary.800"),
+    }),
     extend: {
       colors: {
         primary: {

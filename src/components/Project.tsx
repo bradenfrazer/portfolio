@@ -13,7 +13,10 @@ export const Project = (props: ProjectProps) => {
   return (
     <Container className="flex flex-col items-center justify-between gap-x-16 md:flex-row [&>*]:flex-1">
       <div className={layout === "content/image" ? "md:order-2" : ""}>
-        <img src={project.imageUrl} />
+        <img
+          src={project.imageUrl}
+          className="border-primary-950 border-4 shadow"
+        />
       </div>
       <div className="flex flex-col items-start">
         <h3>{project.title}</h3>
