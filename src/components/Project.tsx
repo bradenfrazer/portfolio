@@ -2,6 +2,7 @@ import { Badge } from "./ui/Badge";
 import { Button } from "./ui/Button";
 import { Container } from "./ui/Container";
 import GithubLogo from "./../assets/github.svg?react";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 type ProjectProps = {
   project: ProjectData;
@@ -30,7 +31,10 @@ export const Project = (props: ProjectProps) => {
         )}
         <div className="flex gap-4">
           <Button href={project.url} openExternal>
-            View
+            <span>
+              <ArrowTopRightOnSquareIcon className="w-4" />
+            </span>
+            <span>View</span>
           </Button>
           {project.githubUrl && (
             <Button href={project.githubUrl} variant="secondary" openExternal>
