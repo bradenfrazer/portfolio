@@ -9,7 +9,7 @@ export const Contact = () => {
       <div>
         <p>
           Have any questions? Like my work? You can contact me using the form
-          below and I'll get back to you as soon as I can!
+          aside and I'll get back to you as soon as I can!
         </p>
       </div>
       <div>
@@ -19,28 +19,32 @@ export const Contact = () => {
         <form
           name="contactform"
           method="POST"
-          data-netlify-recaptcha="true"
+          netlify-honeypot="company"
           data-netlify="true"
           className="flex flex-col gap-4"
         >
           <input type="hidden" name="form-name" value="contact-form" />
 
-          <Label htmlFor="name">
+          <Label>
             Name
             <Input type="text" name="name" required />
           </Label>
 
-          <Label htmlFor="email">
+          <Label className="hidden">
+            Company
+            <Input type="text" name="company" />
+          </Label>
+
+          <Label>
             Email
             <Input type="email" name="email" required />
           </Label>
 
-          <Label htmlFor="message">
+          <Label>
             Message
             <Textarea name="message" rows={5} />
           </Label>
 
-          <div data-netlify-recaptcha="true"></div>
           <button type="submit" className="btn btn-primary self-start">
             Send
           </button>

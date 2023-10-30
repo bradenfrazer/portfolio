@@ -16,10 +16,11 @@
       name="contact-form"
       netlify
       hidden
-      data-netlify-recaptcha="true"
+      netlify-honeypot="company"
       data-netlify="true"
     >
       <input type="text" name="name" />
+      <input class="hidden" type="text" name="company" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
     </form>
