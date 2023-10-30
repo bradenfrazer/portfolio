@@ -31,6 +31,14 @@ export default {
             p: {
               color: theme("colors.primary.950"),
             },
+            a: {
+              transitionProperty: "opacity",
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+              transitionDuration: "150ms",
+              "&:hover": {
+                opacity: 0.5,
+              },
+            },
           },
         },
         invert: {
