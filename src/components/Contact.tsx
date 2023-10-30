@@ -20,6 +20,7 @@ export const Contact = () => {
           name="contactform"
           method="POST"
           data-netlify-recaptcha="true"
+          data-netlify="true"
           className="flex flex-col gap-4"
         >
           <input type="hidden" name="form-name" value="contact-form" />
