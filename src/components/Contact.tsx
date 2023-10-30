@@ -16,26 +16,29 @@ export const Contact = () => {
         <div data-form-alert="" hidden>
           Thanks for filling out the form!
         </div>
-        <form name="contactform" method="POST" className="flex flex-col gap-4">
+        <form
+          name="contactform"
+          method="POST"
+          data-netlify-recaptcha="true"
+          className="flex flex-col gap-4"
+        >
           <input type="hidden" name="form-name" value="contact-form" />
-          <div data-for="name">
-            <Label htmlFor="name">
-              Name
-              <Input type="text" name="name" required />
-            </Label>
-          </div>
-          <div data-for="email">
-            <Label htmlFor="email">
-              Email
-              <Input type="email" name="email" required />
-            </Label>
-          </div>
-          <div data-for="message">
-            <Label htmlFor="message">
-              Message
-              <Textarea name="message" rows={5} />
-            </Label>
-          </div>
+
+          <Label htmlFor="name">
+            Name
+            <Input type="text" name="name" required />
+          </Label>
+
+          <Label htmlFor="email">
+            Email
+            <Input type="email" name="email" required />
+          </Label>
+
+          <Label htmlFor="message">
+            Message
+            <Textarea name="message" rows={5} />
+          </Label>
+
           <div data-netlify-recaptcha="true"></div>
           <button type="submit" className="btn btn-primary self-start">
             Send
