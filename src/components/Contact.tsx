@@ -16,12 +16,7 @@ export const Contact = () => {
         <div data-form-alert="" hidden>
           Thanks for filling out the form!
         </div>
-        <form
-          name="contactform"
-          method="POST"
-          className="flex flex-col gap-4"
-          onSubmit={(e) => e.preventDefault()}
-        >
+        <form name="contactform" method="POST" className="flex flex-col gap-4">
           <input type="hidden" name="form-name" value="contact-form" />
           <div data-for="name">
             <Label htmlFor="name">
