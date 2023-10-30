@@ -19,12 +19,12 @@ export const Project = (props: ProjectProps) => {
         />
       </div>
       <div className="flex flex-col items-start">
-        <h3>{project.title}</h3>
+        <h3 className="lg:text-2xl">{project.title}</h3>
         <p>{project.description}</p>
         {project.stack && (
           <div className="mb-8 flex flex-wrap gap-2">
             {project.stack.map((item) => (
-              <Badge>{item}</Badge>
+              <Badge key={item}>{item}</Badge>
             ))}
           </div>
         )}

@@ -11,6 +11,7 @@ export const Work = (props: WorkProps) => {
       <div className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <Project
+            key={project.title}
             project={project}
             layout={index % 2 ? "image/content" : "content/image"}
           />
