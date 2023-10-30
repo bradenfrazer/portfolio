@@ -1,0 +1,59 @@
+[[redirects]]
+from = "/projects/weathrr"
+to = "https://weathrr.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/weathrr/"
+to = "https://weathrr.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/weathrr/*"
+to = "https://weathrr.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/pokedex"
+to = "https://pokedex.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/pokedex/"
+to = "https://pokedex.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/pokedex/*"
+to = "https://pokedex.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/nationalparks"
+to = "https://national-parks.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/nationalparks/"
+to = "https://national-parks.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/projects/nationalparks/*"
+to = "https://national-parks.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/resume"
+to = "https://resume.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/resume/"
+to = "https://resume.bradenfrazer.com"
+status = 301
+
+[[redirects]]
+from = "/resume/*"
+to = "https://resume.bradenfrazer.com"
+status = 301

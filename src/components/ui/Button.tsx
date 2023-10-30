@@ -15,13 +15,18 @@ const buttonClasses = cva(["btn"], {
 interface ButtonProps extends VariantProps<typeof buttonClasses> {
   className?: string;
   href: string;
+  openExternal?: boolean;
   children: React.ReactNode;
 }
 
 export const Button = (props: ButtonProps) => {
-  const { className, href, children, variant } = props;
+  const { className, href, openExternal, children, variant } = props;
   return (
-    <a className={cx(buttonClasses({ variant }), className)} href={href}>
+    <a
+      className={cx(buttonClasses({ variant }), className)}
+      href={href}
+      target={openExternal ? "blank" : undefined}
+    >
       {children}
     </a>
   );

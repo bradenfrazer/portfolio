@@ -51,7 +51,7 @@ export const projects: ProjectData[] = [
     title: "National Parks",
     description:
       "A listing of national parks located in the United States built in Vue. Clicking on one of the parks will open a modal with some additional info on the park.",
-    url: "https://nationalparks.bradenfrazer.com",
+    url: "https://national-parks.bradenfrazer.com",
     imageUrl: nationalParksImage,
     stack: ["Vue", "SCSS", "National Park Service API"],
   },

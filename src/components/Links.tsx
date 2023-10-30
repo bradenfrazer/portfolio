@@ -9,7 +9,11 @@ export const Links = () => {
     <Section variant="mid">
       <ul className="not-prose mx-auto flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-12">
         <li>
-          <Button href="https://resume.bradenfrazer.com/" variant="secondary">
+          <Button
+            href="https://resume.bradenfrazer.com/"
+            variant="secondary"
+            openExternal
+          >
             <span>
               <DocumentTextIcon className="w-4" />
             </span>
@@ -20,6 +24,7 @@ export const Links = () => {
           <Button
             href="https://www.linkedin.com/in/bradenfrazer"
             variant="secondary"
+            openExternal
           >
             <span>
               <LinkedInLogo className="w-4" />
@@ -28,7 +33,11 @@ export const Links = () => {
           </Button>
         </li>
         <li>
-          <Button href="https://github.com/bradenfrazer/" variant="secondary">
+          <Button
+            href="https://github.com/bradenfrazer/"
+            variant="secondary"
+            openExternal
+          >
             <span>
               <GitHubLogo className="w-4" />
             </span>

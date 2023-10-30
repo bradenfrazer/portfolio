@@ -15,7 +15,7 @@ export const Project = (props: ProjectProps) => {
       <div className={layout === "content/image" ? "md:order-2" : ""}>
         <img
           src={project.imageUrl}
-          className="border-primary-950 border-4 shadow"
+          className="border-4 border-primary-950 shadow"
         />
       </div>
       <div className="flex flex-col items-start">
@@ -28,10 +28,12 @@ export const Project = (props: ProjectProps) => {
             ))}
           </div>
         )}
-        <div className="flex gap-2">
-          <Button href={project.url}>View</Button>{" "}
+        <div className="flex gap-4">
+          <Button href={project.url} openExternal>
+            View
+          </Button>
           {project.githubUrl && (
-            <Button href={project.githubUrl} variant="secondary">
+            <Button href={project.githubUrl} variant="secondary" openExternal>
               <span>
                 <GithubLogo className="w-4" />
               </span>
