@@ -17,39 +17,29 @@ export const Contact = () => {
           Thanks for filling out the form!
         </div>
         <form
-          name="contact-form"
+          name="contactform"
           method="POST"
-          data-netlify="true"
           className="flex flex-col gap-4"
+          onSubmit={(e) => e.preventDefault()}
         >
+          <input type="hidden" name="form-name" value="contact-form" />
           <div data-for="name">
-            <Label htmlFor="name">Name</Label>
-            <Input
-              type="text"
-              name="name"
-              data-form-field="Name"
-              required
-              id="name"
-            />
+            <Label htmlFor="name">
+              Name
+              <Input type="text" name="name" required />
+            </Label>
           </div>
           <div data-for="email">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              type="email"
-              name="email"
-              data-form-field="Email"
-              required
-              id="email"
-            />
+            <Label htmlFor="email">
+              Email
+              <Input type="email" name="email" required />
+            </Label>
           </div>
           <div data-for="message">
-            <Label htmlFor="message">Message</Label>
-            <Textarea
-              name="message"
-              rows={5}
-              data-form-field="Message"
-              id="message"
-            />
+            <Label htmlFor="message">
+              Message
+              <Textarea name="message" rows={5} />
+            </Label>
           </div>
           <div data-netlify-recaptcha="true"></div>
           <button type="submit" className="btn btn-primary self-start">

@@ -2,9 +2,9 @@ import React, { LabelHTMLAttributes } from "react";
 
 interface LabelProps extends LabelHTMLAttributes<HTMLLabelElement> {}
 
-export const Label: React.FC<LabelProps> = ({ htmlFor, children }) => {
+export const Label: React.FC<LabelProps> = ({ children, ...rest }) => {
   return (
-    <label htmlFor={htmlFor} className="text-primary-950 text-sm font-bold">
+    <label className="text-sm font-bold text-primary-950" {...rest}>
       {children}
     </label>
   );
