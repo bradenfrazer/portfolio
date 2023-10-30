@@ -8,7 +8,7 @@ export const Work = (props: WorkProps) => {
   const {} = props;
   return (
     <Section title="Work">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         {projects.map((project, index) => (
           <Project
             key={project.title}
