@@ -15,7 +15,7 @@ const NavItem = (props: NavItemProps) => {
   return (
     <li className="m-0 text-center">
       <a
-        className="block w-full px-4 py-3 font-semibold text-primary-50 transition hover:bg-primary-800 md:rounded-full md:bg-primary-400 md:py-2 md:text-primary-950 md:hover:bg-primary-50/25"
+        className="block w-full px-4 py-3 font-semibold text-primary-50 transition hover:bg-primary-800 md:rounded-full md:py-2 md:text-primary-950 md:hover:bg-primary-50/25"
         href={href}
       >
         {children}
@@ -50,7 +50,7 @@ export const Nav = () => {
           </button>
           <ul
             className={cx(
-              "absolute left-0 top-24 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-primary-900 rounded-lg bg-primary-950 text-primary-50 md:relative md:top-0 md:flex md:flex-row md:gap-12 md:divide-y-0 md:bg-transparent md:text-primary-950",
+              "absolute left-0 top-24 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-primary-900 rounded-lg bg-primary-950 text-primary-50 md:relative md:top-0 md:flex md:flex-row md:gap-6 md:divide-y-0 md:rounded-full md:bg-primary-400 md:text-primary-950 lg:gap-12",
               isNavExpanded ? "flex" : "hidden",
             )}
           >
