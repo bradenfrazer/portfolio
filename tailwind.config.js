@@ -55,7 +55,7 @@ export default {
         DEFAULT: {
           css: {
             "h1, h2": {
-              fontFamily: "'Caveat Brush', sans-serif",
+              fontFamily: "'Quicksand Variable', system-ui, sans-serif",
             },
             p: {
               color: theme("colors.primary.950"),

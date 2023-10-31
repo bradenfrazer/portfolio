@@ -1,4 +1,5 @@
-import "@fontsource/caveat-brush";
+import "@fontsource-variable/quicksand";
+import "@fontsource-variable/overpass";
 
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
