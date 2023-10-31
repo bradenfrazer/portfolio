@@ -9,7 +9,7 @@ export const Hero = (props: HeroProps) => {
   return (
     <Section variant="hybrid" className="pb-0 pt-20 md:pb-0 md:pt-32">
       <div className="w-full pt-5 md:pt-0">
-        <h1 className="mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+        <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Hi, I'm{" "}
           <span className="underline decoration-primary-400 decoration-4 underline-offset-8 lg:decoration-8">
             Braden
