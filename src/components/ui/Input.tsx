@@ -6,7 +6,7 @@ export const Input = (props: InputProps) => {
   return (
     <input
       {...props}
-      className="border-primary-950 bg-primary-50 focus:border-primary-800 w-full rounded border-4 p-2 shadow focus:bg-white focus:shadow-sm focus:outline-none"
+      className="w-full rounded border-4 border-primary-950 bg-primary-50 p-2 shadow focus:border-primary-800 focus:bg-white focus:shadow-primary-800 focus:outline-none"
     />
   );
 };

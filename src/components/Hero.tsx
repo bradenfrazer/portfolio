@@ -16,7 +16,7 @@ export const Hero = (props: HeroProps) => {
         <Button href="#work">View My Work</Button>
       </div>
       <div className="flex w-full justify-end">
-        <div className="not-prose relative -mt-32 w-1/2 max-w-xs sm:w-auto md:m-0 md:max-w-lg">
+        <div className="md:hover:animate-wobble not-prose relative -mt-32 w-1/2 max-w-xs sm:w-auto md:top-2 md:m-0 md:max-w-lg">
           <picture>
             <source media="(min-width: 768px)" srcSet={headshot} />
             <img src={headshot} alt="Braden Frazer logo" />

@@ -4,7 +4,7 @@ export default {
   theme: {
     boxShadow: ({ theme }) => ({
       DEFAULT: "0.25rem 0.25rem " + theme("colors.primary.950"),
-      sm: "0.25rem 0.25rem " + theme("colors.primary.800"),
+      sm: "0.125rem 0.125rem " + theme("colors.primary.950"),
     }),
     extend: {
       colors: {
@@ -21,6 +21,35 @@ export default {
           900: "hsl(215, 17%, 34%)",
           950: "hsl(217, 18%, 20%)",
         },
+      },
+      keyframes: {
+        fade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        flip: {
+          "50%": { transform: "rotateY(180deg)" },
+        },
+        wobble: {
+          from: { transform: "translate3d(0,0,0)" },
+          "15%": {
+            transform: "translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)",
+          },
+          "30%": { transform: "translate3d(4%,0,0) rotate3d(0,0,1,0.75deg)" },
+          "45%": {
+            transform: "translate3d(-3%,0,0) rotate3d(0,0,1,-0.75deg)",
+          },
+          "60%": { transform: "translate3d(2%,0,0) rotate3d(0,0,1,0.5deg)" },
+          "75%": {
+            transform: "translate3d(-1%,0,0) rotate3d(0,0,1,-0.25deg)",
+          },
+          to: { transform: "translate3d(0,0,0)" },
+        },
+      },
+      animation: {
+        fade: "fade 1s normal",
+        flip: "flip 1s normal",
+        wobble: "wobble 1s normal",
       },
       typography: ({ theme }) => ({
         DEFAULT: {

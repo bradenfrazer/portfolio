@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply relative  inline-flex items-center gap-2 rounded-full border-4 border-primary-950 px-4 py-2 text-sm font-bold no-underline shadow transition duration-100 hover:opacity-100 focus:border-primary-800 focus:shadow-sm focus:outline-none sm:text-base;
+    @apply relative inline-flex items-center gap-2 rounded-full border-4 border-primary-950 px-4 py-2 text-sm font-bold no-underline shadow transition duration-100 hover:left-1 hover:top-1 hover:opacity-100 hover:shadow-sm focus:border-primary-800 focus:shadow-primary-800 focus:outline-none sm:text-base;
   }
   .btn-primary {
     @apply bg-primary-50 text-primary-950 hover:bg-primary-400 hover:text-gray-900;
