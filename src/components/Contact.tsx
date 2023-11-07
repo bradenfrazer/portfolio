@@ -6,7 +6,7 @@ import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 export const Contact = () => {
   return (
-    <Section title="Contact" variant="light">
+    <Section title="Contact" variant="light" className="pt-[12vw] md:pt-[12vw]">
       <div>
         <p>
           Have any questions? Like my work? You can contact me using this form
