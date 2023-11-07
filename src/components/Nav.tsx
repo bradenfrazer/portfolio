@@ -30,7 +30,7 @@ export const Nav = () => {
   return (
     <nav className="absolute z-10 w-full px-5 py-4 md:p-14 md:py-8">
       <Container className="flex justify-between">
-        <a className="hover:animate-flip w-12 md:w-16" href="/">
+        <a className="w-12 hover:animate-flip md:w-16" href="/">
           <picture>
             <source media="(min-width: 768px)" srcSet={logoFull} />
             <img src={logo} alt="Braden Frazer logo" />
@@ -50,8 +50,10 @@ export const Nav = () => {
           </button>
           <ul
             className={cx(
-              "absolute left-0 top-24 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-primary-900 rounded-lg bg-primary-950 text-primary-50 md:relative md:top-0 md:flex md:flex-row md:gap-6 md:divide-y-0 md:rounded-full md:bg-primary-400 md:text-primary-950 lg:gap-12",
-              isNavExpanded ? "flex" : "hidden",
+              "absolute left-0 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-primary-900 overflow-hidden rounded-lg bg-primary-950 text-primary-50 transition-all md:not-sr-only md:relative md:top-0 md:flex md:flex-row md:gap-6 md:divide-y-0 md:rounded-full md:bg-primary-400 md:text-primary-950 md:opacity-100 lg:gap-12",
+              isNavExpanded
+                ? "top-24 flex opacity-100"
+                : "sr-only top-32 opacity-0",
             )}
           >
             <NavItem href="/#work">Work</NavItem>
