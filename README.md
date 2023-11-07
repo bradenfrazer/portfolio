@@ -1,5 +1,7 @@
 # bradenfrazer.com, Portfolio Website
 
+![SCR-20231107-ojla](https://github.com/bradenfrazer/portfolio/assets/14165342/ff6a6f01-0121-4276-943a-978feafe826e)
+
 This portfolio website serves as the 3rd major rebuild of my website, [bradenfrazer.com](https://www.bradenfrazer.com), and is meant to showcase my personal brand and the work that I've done. The site is built as a React SPA with some reusable components for the basic UI and webpage sections, and with a simple object data structure for projects as those are what change the most when I usually make website updates.
 
 As an engineer currently in the UI/UX design space, I felt it was important to have a portfolio that accurately reflects my skills, personality, brand, and most importantly - my work!
