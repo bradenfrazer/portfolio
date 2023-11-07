@@ -57,3 +57,8 @@ status = 301
 from = "/resume/*"
 to = "https://resume.bradenfrazer.com"
 status = 301
+
+[[redirects]]
+from = "/uploads/content/resume.pdf"
+to = "https://resume.bradenfrazer.com"
+status = 301
