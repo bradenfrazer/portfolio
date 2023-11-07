@@ -6,9 +6,9 @@ import LinkedInLogo from "./../assets/linkedin.svg?react";
 
 export const Links = () => {
   return (
-    <Section variant="mid" slant className="z-10 mt-[-6vw]">
+    <Section variant="mid" slant className="z-10 -mt-[var(--skew-padding)]">
       <ul className="not-prose mx-auto flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-16">
-        <li className="sm:pb-12">
+        <li className="sm:pb-[calc(var(--skew-padding)/2)]">
           <Button
             href="https://resume.bradenfrazer.com/"
             variant="secondary"
@@ -32,7 +32,7 @@ export const Links = () => {
             <span>LinkedIn</span>
           </Button>
         </li>
-        <li className="sm:pt-12">
+        <li className="sm:pt-[calc(var(--skew-padding)/2)]">
           <Button
             href="https://github.com/bradenfrazer/"
             variant="secondary"

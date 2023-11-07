@@ -7,7 +7,7 @@ export const About = () => {
       title="About"
       variant="mid"
       slant
-      className="z-10 mb-[-6vw] mt-[6vw]"
+      className="z-10 -mb-[var(--skew-padding)] mt-[var(--skew-padding)]"
     >
       <div className="md:order-2">
         <img
@@ -15,7 +15,7 @@ export const About = () => {
           src={photo}
         />
       </div>
-      <div className="pb-[6vw]">
+      <div className="pb-[var(--skew-padding)]">
         <p>
           My name is Braden Frazer, and I'm a web developer currently residing
           in the Dallas, TX area. I have a passion for all kinds of tech, and a

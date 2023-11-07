@@ -15,6 +15,11 @@
 }
 
 :root {
+  --angle: 6deg;
+  --abs-angle: max(var(--angle), var(--angle) * -1);
+  --tan-alpha: tan(var(--abs-angle));
+  --skew-padding: calc(100vw * var(--tan-alpha) / 2);
+
   font-family: "Overpass Variable", system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
