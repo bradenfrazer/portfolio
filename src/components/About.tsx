@@ -6,7 +6,7 @@ export const About = () => {
     <Section title="About" variant="mid">
       <div className="md:order-2">
         <img
-          className="border-primary-950 mx-auto w-48 max-w-xs rounded-full border-4 shadow md:w-auto"
+          className="mx-auto w-48 max-w-xs rounded-full border-4 border-primary-950 shadow md:w-auto"
           src={photo}
         />
       </div>
@@ -14,13 +14,10 @@ export const About = () => {
         <p>
           My name is Braden Frazer, and I'm a web developer currently residing
           in the Dallas, TX area. I have a passion for all kinds of tech, and a
-          particular focus in media and design that spans anywhere from
-          designing websites and logos to running sound for a football stadium.
-          I've maintained a unique balance between creative and tech throughout
-          my life, studying programming as a Computer Science major at Texas A&M
-          University while dabbling in photography, video editing, audio
-          engineering, graphic design and more with a minor in Art. Most
-          recently, I worked as a UX Engineer at{" "}
+          particular focus in user experience design, creating modern user
+          interfaces for websites and applications, while also practicing
+          empathy from the user perspective to form an experience that is fun
+          and not frustrating. Most recently, I worked as a UX Engineer at{" "}
           <a href="https://www.dropps.com/" target="_blank">
             Dropps
           </a>
