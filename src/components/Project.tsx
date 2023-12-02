@@ -40,7 +40,7 @@ export const Project = (props: ProjectProps) => {
                 openExternal
               >
                 <span>
-                  {item.icon == "github" ? (
+                  {item.label == "GitHub" ? (
                     <GithubLogo className="w-4" />
                   ) : (
                     <ArrowTopRightOnSquareIcon className="w-4" />
