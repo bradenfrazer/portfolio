@@ -33,7 +33,12 @@ export const Project = (props: ProjectProps) => {
           )}
           <div className="flex gap-4">
             {project.urls?.map((item) => (
-              <Button key={item.url} href={item.url} variant={item.variant}>
+              <Button
+                key={item.url}
+                href={item.url}
+                variant={item.variant}
+                openExternal
+              >
                 <span>
                   {item.icon == "github" ? (
                     <GithubLogo className="w-4" />
