@@ -32,20 +32,18 @@ export const Project = (props: ProjectProps) => {
             </div>
           )}
           <div className="flex gap-4">
-            <Button href={project.url} openExternal>
-              <span>
-                <ArrowTopRightOnSquareIcon className="w-4" />
-              </span>
-              <span>View</span>
-            </Button>
-            {project.githubUrl && (
-              <Button href={project.githubUrl} variant="secondary" openExternal>
+            {project.urls?.map((item) => (
+              <Button key={item.url} href={item.url} variant={item.variant}>
                 <span>
-                  <GithubLogo className="w-4" />
+                  {item.icon == "github" ? (
+                    <GithubLogo className="w-4" />
+                  ) : (
+                    <ArrowTopRightOnSquareIcon className="w-4" />
+                  )}
                 </span>
-                <span>GitHub</span>
+                <span>{item.label}</span>
               </Button>
-            )}
+            ))}
           </div>
         </div>
       </Container>
