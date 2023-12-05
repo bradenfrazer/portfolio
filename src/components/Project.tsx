@@ -22,7 +22,11 @@ export const Project = (props: ProjectProps) => {
           />
         </div>
         <div className="flex flex-col items-start">
-          <h3 className="mt-0 sm:mt-4 lg:text-2xl">{project.title}</h3>
+          <h3 className="mt-0 flex items-center gap-4 sm:mt-4 lg:text-2xl">
+            {project.title}
+            {project.status && <Badge>{project.status}</Badge>}
+          </h3>
+
           <p>{project.description}</p>
           {project.stack && (
             <div className="mb-8 flex flex-wrap gap-2">

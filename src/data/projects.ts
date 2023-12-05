@@ -21,9 +21,10 @@ export const projects: ProjectData[] = [
     stack: ["React", "Tailwind CSS", "Figma", "Design System", "A/B Tests"],
   },
   {
-    title: "Wonder Design System (Coming Soon!)",
+    title: "Wonder Design System",
     description:
       "A colorful, comic-like design system, inspired by Nintendo's hit 2023 video game 'Super Mario Wonder', and tailored to my own personal portfolio and brand. It strives to stand out in a world full of sterile design systems that have basic, modern UI elements with blue accent colors. Wonder injects personality when used, and represents the creativity and personality I embody as a UX Engineer.",
+    status: "Coming Soon",
     imageUrl: wonderImage,
     stack: ["Figma", "Design System"],
   },

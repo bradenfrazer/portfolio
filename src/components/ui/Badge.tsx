@@ -10,7 +10,7 @@ export const Badge = (props: BadgeProps) => {
   return (
     <span
       className={cx(
-        "whitespace-nowrap rounded-lg border border-primary-950 bg-primary-800 px-2 py-1 text-xs text-primary-50",
+        "whitespace-nowrap rounded-lg border border-primary-950 bg-primary-800 px-2 py-1 text-xs font-normal text-primary-50",
         className,
       )}
     >
