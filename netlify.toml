@@ -44,6 +44,11 @@ to = "https://national-parks.bradenfrazer.com"
 status = 301
 
 [[redirects]]
+from = "/uploads/content/DroppsUXBrief.pdf"
+to = "/DroppsUXBrief.pdf"
+status = 301
+
+[[redirects]]
 from = "/resume"
 to = "https://resume.bradenfrazer.com"
 status = 301

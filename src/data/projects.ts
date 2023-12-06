@@ -1,4 +1,3 @@
-import droppsUxBriefPdf from "../assets/projects/DroppsUXBrief.pdf";
 import droppsUxBriefImage from "../assets/projects/droppsuxbrief.png";
 import wonderImage from "../assets/projects/wonder.png";
 import nintendleImage from "../assets/projects/nintendle.png";
@@ -13,7 +12,7 @@ export const projects: ProjectData[] = [
       "A brief that highlights a portion of the UX work I performed during my time at Dropps. It covers design system work, some components built, A/B tests ran, and other UI improvements.",
     urls: [
       {
-        url: droppsUxBriefPdf,
+        url: "/DroppsUXBrief.pdf",
         label: "View",
       },
     ],
