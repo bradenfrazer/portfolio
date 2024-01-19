@@ -27,7 +27,7 @@ export const projects: ProjectData[] = [
     urls: [
       {
         url: "https://www.figma.com/file/m2Wy4Noptp6XkxBIG9ZGGj/Wonder-Design-System?type=design&node-id=182%3A6921&mode=design&t=rCMZUlKCNIHOfs7R-1",
-        label: "Preview",
+        label: "View",
       },
     ],
     stack: ["Figma", "Design System"],
