@@ -17,19 +17,20 @@ export const About = () => {
       </div>
       <div className="pb-[var(--skew-padding)]">
         <p>
-          My name is Braden Frazer, and I'm a web developer currently residing
-          in the Dallas, TX area. I have a passion for all kinds of tech, and a
-          particular focus in user experience design, creating modern user
-          interfaces for websites and applications, while also practicing
-          empathy from the user perspective to form an experience that is fun
-          and not frustrating. Most recently, I worked as a UX Engineer at{" "}
-          <a href="https://www.dropps.com/" target="_blank">
-            Dropps
+          My name is Braden Frazer, and I'm a frontend UX-focused developer
+          currently residing in the Dallas, TX area. I have a passion for all
+          kinds of tech, and a particular focus in user experience design,
+          creating modern user interfaces for websites and applications, while
+          also practicing empathy from the user perspective to form an
+          experience that is fun and not frustrating. Currently, I am
+          contracting at{" "}
+          <a href="https://www.bswhealth.com/" target="_blank">
+            Baylor Scott & White Health
           </a>
-          , building out a design system and working between design and code to
-          create an optimal user experience for our website visitors. If you
-          have any questions or interest in my work, don't hesitate to contact
-          me through the form below!
+          , ensuring brand consistency and a design system implementation across
+          the system's public facing websites. If you have any questions or
+          interest in my work, don't hesitate to contact me through the form
+          below!
         </p>
       </div>
     </Section>
