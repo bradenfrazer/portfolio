@@ -12,8 +12,8 @@ export const Contact = () => {
           Have any questions? Like my work? You can contact me using this form
           and I'll get back to you as soon as I can!
         </p>
-        <hr className="border-primary-950" />
-        <ul className="list-none p-0 text-primary-950">
+        <hr className="border-gray-950" />
+        <ul className="list-none p-0 text-gray-950">
           <li className="flex gap-2 whitespace-nowrap p-0">
             <MapPinIcon className="w-5" />
             <span className="font-medium">Dallas, TX</span>

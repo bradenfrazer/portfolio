@@ -5,10 +5,10 @@ const sectionClasses = cva(["group relative w-full px-5 py-8 md:p-14"], {
   variants: {
     variant: {
       dark: "text-light",
-      light: "bg-primary-400 before:bg-primary-400",
+      light: "bg-gray-400 before:bg-gray-400",
       hybrid:
-        "text-light bg-[linear-gradient(110deg,var(--tw-gradient-stops))] from-transparent from-65% to-primary-400 to-65% sm:from-50% sm:to-50%",
-      mid: "text-light bg-primary-800 before:bg-primary-800",
+        "text-light bg-[linear-gradient(110deg,var(--tw-gradient-stops))] from-transparent from-65% to-gray-400 to-65% sm:from-50% sm:to-50%",
+      mid: "text-light bg-gray-800 before:bg-gray-800",
     },
     slant: {
       true: "skew-y-6",

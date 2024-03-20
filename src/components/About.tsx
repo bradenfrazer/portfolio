@@ -11,7 +11,7 @@ export const About = () => {
     >
       <div className="md:order-2">
         <img
-          className="mx-auto w-48 max-w-xs rounded-full border-4 border-primary-950 shadow md:w-auto"
+          className="mx-auto w-48 max-w-xs rounded-full border-4 border-gray-950 shadow md:w-auto"
           src={photo}
         />
       </div>

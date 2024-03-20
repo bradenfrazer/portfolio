@@ -18,7 +18,7 @@ export const Project = (props: ProjectProps) => {
         <div className={layout === "content/image" ? "md:order-2" : ""}>
           <img
             src={project.imageUrl}
-            className="border-4 border-primary-950 shadow"
+            className="border-4 border-gray-950 shadow"
           />
         </div>
         <div className="flex flex-col items-start">

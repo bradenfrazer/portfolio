@@ -15,7 +15,7 @@ const NavItem = (props: NavItemProps) => {
   return (
     <li className="m-0 text-center">
       <a
-        className="block w-full px-4 py-3 font-semibold text-primary-50 transition hover:bg-primary-800 md:rounded-full md:py-2 md:text-primary-950 md:hover:bg-primary-50/25"
+        className="block w-full px-4 py-3 font-semibold text-gray-50 transition hover:bg-gray-800 md:rounded-full md:py-2 md:text-gray-950 md:hover:bg-gray-50/25"
         href={href}
       >
         {children}
@@ -38,19 +38,19 @@ export const Nav = () => {
         </a>
         <div className="flex items-center">
           <button
-            className="-mr-4 block rounded-full p-4 hover:bg-primary-50/25 md:hidden"
+            className="-mr-4 block rounded-full p-4 hover:bg-gray-50/25 md:hidden"
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            {isNavExpanded && <XMarkIcon className="w-6 text-primary-950" />}
+            {isNavExpanded && <XMarkIcon className="w-6 text-gray-950" />}
             {!isNavExpanded && (
-              <Bars3BottomRightIcon className="w-6 text-primary-950" />
+              <Bars3BottomRightIcon className="w-6 text-gray-950" />
             )}
           </button>
           <ul
             className={cx(
-              "absolute left-0 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-primary-900 overflow-hidden rounded-lg bg-primary-950 text-primary-50 transition-all md:not-sr-only md:relative md:top-0 md:flex md:flex-row md:gap-6 md:divide-y-0 md:rounded-full md:bg-primary-400 md:text-primary-950 md:opacity-100 lg:gap-12",
+              "absolute left-0 ml-5 w-[calc(100%-40px)] flex-col divide-y divide-gray-900 overflow-hidden rounded-lg bg-gray-950 text-gray-50 transition-all md:not-sr-only md:relative md:top-0 md:flex md:flex-row md:gap-6 md:divide-y-0 md:rounded-full md:bg-gray-400 md:text-gray-950 md:opacity-100 lg:gap-12",
               isNavExpanded
                 ? "top-24 flex opacity-100"
                 : "sr-only top-32 opacity-0",

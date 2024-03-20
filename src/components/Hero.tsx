@@ -11,7 +11,7 @@ export const Hero = (props: HeroProps) => {
       <div className="w-full pt-5 md:pb-[var(--skew-padding)] md:pt-0">
         <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Hi, I'm{" "}
-          <span className="underline decoration-primary-400 decoration-4 underline-offset-8 lg:decoration-8">
+          <span className="underline decoration-gray-400 decoration-4 underline-offset-8 lg:decoration-8">
             Braden
           </span>
           .
