@@ -8,7 +8,7 @@ const sectionClasses = cva(["group relative w-full px-5 py-8 md:p-14"], {
       light: "bg-gray-400 before:bg-gray-400",
       hybrid:
         "text-light bg-[linear-gradient(110deg,var(--tw-gradient-stops))] from-transparent from-65% to-gray-400 to-65% sm:from-50% sm:to-50%",
-      mid: "text-light bg-gray-800 before:bg-gray-800",
+      mid: "text-light bg-gray-700 before:bg-gray-700",
     },
     slant: {
       true: "skew-y-6",
