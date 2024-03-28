@@ -15,7 +15,7 @@ const NavItem = (props: NavItemProps) => {
   return (
     <li className="m-0 text-center">
       <a
-        className="block w-full px-4 py-3 font-semibold text-gray-50 transition hover:bg-gray-800 md:rounded-full md:py-2 md:text-gray-950 md:hover:bg-gray-50/25"
+        className="hover:bg-yellow block w-full px-4 py-3 font-semibold text-gray-50 transition hover:text-gray-950 md:rounded-full md:py-2 md:text-gray-950 md:hover:bg-gray-50/25"
         href={href}
       >
         {children}
