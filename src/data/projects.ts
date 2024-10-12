@@ -1,3 +1,4 @@
+import thesisUxBriefImage from "../assets/projects/thesisuxbrief.png";
 import droppsUxBriefImage from "../assets/projects/droppsuxbrief.png";
 import wonderImage from "../assets/projects/wonder.png";
 import nintendleImage from "../assets/projects/nintendle.png";
@@ -7,6 +8,24 @@ import nationalParksImage from "../assets/projects/nationalparks.png";
 
 export const projects: ProjectData[] = [
   {
+    title: "Thesis UX Brief",
+    description:
+      "A brief that highlights a portion of the UX work I performed during my time at Thesis. It covers the design system I built for the company, UI/UX strategy I implemented, and A/B tests we ran. ",
+    urls: [
+      {
+        url: "/ThesisUXBrief.pdf",
+        label: "View",
+      },
+      {
+        url: "https://takethesis.com",
+        label: "Thesis Website",
+        variant: "secondary",
+      },
+    ],
+    imageUrl: thesisUxBriefImage,
+    stack: ["React", "Tailwind CSS", "Figma", "Design System", "A/B Tests"],
+  },
+  {
     title: "Dropps UX Brief",
     description:
       "A brief that highlights a portion of the UX work I performed during my time at Dropps. It covers design system work, some components built, A/B tests ran, and other UI improvements.",
@@ -14,6 +33,11 @@ export const projects: ProjectData[] = [
       {
         url: "/DroppsUXBrief.pdf",
         label: "View",
+      },
+      {
+        url: "https://dropps.com",
+        label: "Dropps Website",
+        variant: "secondary",
       },
     ],
     imageUrl: droppsUxBriefImage,
