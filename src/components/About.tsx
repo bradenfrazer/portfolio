@@ -23,14 +23,17 @@ export const About = () => {
           creating modern user interfaces for websites and applications, while
           also practicing empathy from the user perspective to form an
           experience that is fun and not frustrating. Currently, I am working as
-          a UX-focused software engineer at{" "}
-          <a href="https://www.takethesis.com/" target="_blank">
-            Thesis
+          a Design Engineer at{" "}
+          <a href="https://www.onesignal.com/" target="_blank">
+            OneSignal
           </a>
-          , working to greatly improve the brand's visual identity and translate
-          it into beautiful maintainable code. If you have any questions or
-          interest in my work, don't hesitate to contact me through the form
-          below!
+          , working to develop the{" "}
+          <a href="https://onesignal.supernova-docs.io/" target="_blank">
+            internal Beam design system
+          </a>{" "}
+          and help build the UX and UI of our messaging platform used by 2
+          million app developers. If you have any questions or interest in my
+          work, don't hesitate to contact me through the form below!
         </p>
       </div>
     </Section>
