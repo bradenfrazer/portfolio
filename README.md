@@ -20,9 +20,10 @@ My new portfolio site runs as a React SPA - overkill, sure, but blazing fast to 
 
 💁🏻‍♂️ Personality: there are subtle animations for my own flare, and this showcases the beginnings of my own personal design system I am building! Is a personal design system necessary? Absolutely not, but I am a UX guy after all ;)
 
-Also, it should hopefully go without saying, but this design, like everything in my portfolio, is my OWN! You won’t find this in some Behance or Dribble template.
+Also, it should hopefully go without saying, but this design, like everything in my portfolio, is my OWN! You won’t find this in some Behance or Dribbble template.
 
 ## Stack includes:
+
 - View: **React**
 - Language: **TypeScript**
 - Styling: **Tailwind CSS** + **class-variance-authority**
